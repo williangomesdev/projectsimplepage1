@@ -6,6 +6,9 @@
     <meta name="author" content="Willian Amaro Gomes" />
     <meta name="description" content="Simple page to learn web development" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet" />
     <link href="" rel="icon" />
     <title>#Projeto1</title>
@@ -20,14 +23,17 @@
             <form class="firstform">
                 <h2>Fill out the form and start your journey to become a webmaster!</h2>
                 <ul>
-                    <li>Name:</li>
-                    <li> <input type="text" name="name" required placeholder="Seu nome*" /></li>
-                    <li>E-mail:</li>
-                    <li><input type="text" name="email" required placeholder="Seu E-mail*" /></li>
-                    <li>Tel:</li>
-                    <li> <input type="tel" name="name" required placeholder="Seu telefone/Whatsapp*" /></li>
+                    <li><span>Name*:</span></li>
+                    <li> <input type="text" name="name" required /></li>
+                    <li><span>E-mail*:</span></li>
+                    <li><input type="text" name="email" required /></li>
+                    <li><span>Tel/Whatsapp*:</span></li>
+                    <li> <input type="tel" name="name" required /></li>
                 </ul>
-                <input type="Submit" name="submit" value="Register"/>
+                <p>Required fields*</p>
+                <div class="container-submit">
+                <input type="Submit" name="action" value="Register!" />
+            </div>
             </form>
         </section>
     </section>
