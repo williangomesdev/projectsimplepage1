@@ -1,5 +1,46 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 76px;
+    background-color: #212343;
+}
+
+.logo {
+    width: 145px;
+    height: 21px;
+    margin-left: 44px;
+    margin-top: 28px;
+    background-image: url(../images/logo.png);
+}
+
+.bannerSite{
+    width: 100%;
+    height: 557px;
+    background-image: url(../images/header_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.formContainer{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.firstform{
+    width: 400px;
+    height: 100%;
+    position: relative;
+    top: 38px;
+    right: 35px;
+    background-color:#FFFFFF;
+    border: 10px solid #CCCCCC;
+
 }
