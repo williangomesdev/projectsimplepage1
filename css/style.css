@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body {
+body,
+header,
+footer {
     font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
@@ -38,6 +43,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .firstform {
@@ -47,7 +53,8 @@ body {
     top: 38px;
     right: 35px;
     background-color: #FFFFFF;
-    border: 10px solid #CCCCCC;
+    border: 10px solid rgba(204, 204, 204, 0.5);
+    background-clip: padding-box;
 
 }
 
@@ -82,7 +89,7 @@ input[type=tel] {
     margin: 20px 8px;
 }
 
-.container-submit{
+.container-submit {
     text-align: center;
 }
 
@@ -96,11 +103,59 @@ input[type=tel] {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 5px solid #4A5097 ;
+    border-bottom: 5px solid #4A5097;
     cursor: pointer;
 
 }
 
-.firstform input[type=submit]:hover{
+.firstform input[type=submit]:hover {
     background-color: #323665;
+}
+
+.bannerBox {
+    width: calc(100% - 665px);
+    height: 270px;
+    position: relative;
+    top: 170px;
+    left: 70px;
+    background-color: rgba(33, 35, 67, 0.7);
+    padding: 30px;
+}
+
+.bannerBox ul {
+    list-style-position: inside;
+
+}
+
+.bannerBox ul li {
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.bannerBox ul li:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.bannerBody1 {
+    width: 100%;
+    height: 335px;
+    background-color: #DDDDDD;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.bannerBody1 h2 {
+    font-size: 26px;
+    color: #000000;
+    text-align: center;
+}
+
+.bannerBody1 p {
+    display:inline-block;
+    width:698px;
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
+    margin: 15px 0;
 }
